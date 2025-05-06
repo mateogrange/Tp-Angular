@@ -3,6 +3,8 @@ import { WebSnapListComponent } from '@/components/web-snap-list/web-snap-list.c
 import { LandingPageComponent } from '@/components/landing-page/landing-page.component';
 import { WebSnapComponent } from '@/components/web-snap/web-snap.component';
 import { ErrorComponent } from './components/error/error.component';
+import { CharacterListComponent } from './components/character-list/character-list.component';
+
 
 import { authRoutes } from './routes/auth.routes';
 import { AuthGuard } from './guards/auth/auth.guard';
@@ -27,6 +29,12 @@ export const routes: Routes = [
     title:`WebSnap - ${appTitle}`,
     canActivate: [AuthGuard],
     loadComponent: () => import("@/components/web-snap/web-snap.component").then(m => m.WebSnapComponent)
+  },
+  {
+    path:"characters",
+    title:`Liste des personnages - ${appTitle}`,
+    canActivate: [AuthGuard],
+    loadComponent: () => import('./components/character-list/character-list.component').then(m => m.CharacterListComponent)
   },
   {
     path: "auth",

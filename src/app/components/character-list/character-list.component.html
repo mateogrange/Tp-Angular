@@ -1,0 +1,12 @@
+<p>character-list works!</p>
+
+<div class="character-list">
+  <h2>Rick and Morty Characters</h2>
+
+  <div *ngFor="let character of characters" class="character-card">
+    <h3>{{ character.name }}</h3>
+    <img [src]="character.image" alt="{{ character.name }}" />
+    <p>Status: {{ character.status }}</p>
+    <p>Species: {{ character.species }}</p>
+  </div>
+</div>

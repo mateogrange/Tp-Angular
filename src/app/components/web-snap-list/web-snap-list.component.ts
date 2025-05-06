@@ -2,11 +2,13 @@ import { Component, inject, OnInit } from '@angular/core';
 import { WebSnapsService } from '@/services/web-snaps.service';
 import { WebSnapI } from '@/interfaces/web-snap.interface';
 import { WebSnapDetailsComponent } from '@/components/web-snap-details/web-snap-details.component';
+import {CharacterListComponent} from '@/components/character-list/character-list.component';
 
 @Component({
   selector: 'app-web-snap-list',
   imports: [
-    WebSnapDetailsComponent
+    WebSnapDetailsComponent,
+    CharacterListComponent
   ],
   templateUrl: './web-snap-list.component.html',
   styleUrl: './web-snap-list.component.css'
