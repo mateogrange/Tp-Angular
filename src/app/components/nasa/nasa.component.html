@@ -1,0 +1,6 @@
+<div class="nasa-container" *ngIf="nasa">
+  <h2>{{ nasa.title }}</h2>
+  <img [src]="nasa.thumbnail_url" [alt]="nasa.title" />
+  <p>Date: {{ nasa.date }}</p>
+  <p>{{ nasa.explanation }}</p>
+</div>

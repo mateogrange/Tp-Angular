@@ -37,6 +37,12 @@ export const routes: Routes = [
     loadComponent: () => import('./components/character-list/character-list.component').then(m => m.CharacterListComponent)
   },
   {
+    path:"nasa",
+    title:`nasa - ${appTitle}`,
+    canActivate: [AuthGuard],
+    loadComponent: () => import('./components/nasa/nasa.component').then(m => m.NasaComponent)
+  },
+  {
     path: "auth",
     loadChildren: () => import("./routes/auth.routes").then(m => m.authRoutes)
   },
