@@ -33,7 +33,7 @@ export const routes: Routes = [
   {
     path:"characters",
     title:`Liste des personnages - ${appTitle}`,
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
     loadComponent: () => import('./components/character-list/character-list.component').then(m => m.CharacterListComponent)
   },
   {
