@@ -2,7 +2,6 @@
   width:100dvw;
   max-width:100%;
   display:block;
-  margin-block:.25rem;
   .main-menu{
       list-style:none;
       width:100%;
@@ -13,19 +12,20 @@
       flex-wrap:wrap;
       gap:1.5rem 2rem;
       padding:1rem .5rem;
-      background-color:#edede8;
-      box-shadow:0 .05rem .5rem 0 #c0c0af;
-      
+      // background-color:#edede8;
+      // box-shadow:0 .05rem .5rem 0 #c0c0af;
+      border-bottom: 1px #979797 solid;
+
       .main-menu-items{
           margin:0;
           padding:0;
-          
+
           .main-menu-links{
               text-decoration:unset;
-              color:#97900f;
-              font-weight:700;
-              font-size:1.1rem;
+              font-weight:500;
+              font-size:1rem;
               letter-spacing:.025rem;
+              color: #979797;
 
               &:hover{
                   color:#5e5d4a;

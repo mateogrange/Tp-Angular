@@ -1,13 +1,20 @@
-<section>
+<section >
   <h2>
     Page d'accueil
   </h2>
 
-  <p>
-    Vous pouvez consulter la liste des websnaps.
-  </p>
+  <div class="card">
+    <div class="img">
+      <img [src]="imageUrl" alt="Description">
+    </div>
+      <p>
+        Vous pouvez consulter les infos du jours de la nasa.
+      </p>
 
-  <button (click)="onContinue()">
-    Voir la liste des websnaps
-  </button>
+      <button (click)="onContinue()" class="button">
+        Voir les infos
+      </button>
+
+  </div>
+
 </section>

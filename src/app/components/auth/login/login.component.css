@@ -1,0 +1,10 @@
+.login {
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px white solid;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 20px;
+}
