@@ -1,12 +1,19 @@
-<p>character-list works!</p>
+<div class="img">
+  <img [src]="imageUrl" alt="Description">
+</div>
 
 <div class="character-list">
-  <h2>Rick and Morty Characters</h2>
-
   <div *ngFor="let character of characters" class="character-card">
+    <img [src]="character.image" alt="{{ character.name }}" class="character-img"/>
     <h3>{{ character.name }}</h3>
-    <img [src]="character.image" alt="{{ character.name }}" />
-    <p>Status: {{ character.status }}</p>
-    <p>Species: {{ character.species }}</p>
+    <div class="character-info">
+      <div>
+        <p>Status:  {{ character.status }}</p>
+      </div>
+      <div>
+        <p>Species:  {{ character.species }}</p>
+      </div>
+    </div>
+
   </div>
 </div>

@@ -12,10 +12,11 @@ import { ChangeDetectorRef } from '@angular/core';
 })
 export class CharacterListComponent implements OnInit {
   characters: any[] = [];
+  imageUrl: string = 'https://upload.wikimedia.org/wikipedia/fr/7/74/Rick_et_Morty_Logo_FR.png'
 
   constructor(
     private rickAndMortyService: RickAndMortyService,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
   ) {}
 
   ngOnInit(): void {
